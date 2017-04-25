@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-1 22:50:41 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.cat.zb.entities.Hum" table="hum">
+        <id name="hum_id" type="int">
+            <column name="hum_id" />
+            <generator class="native" />
+        </id>
+        <property name="date_time" type="java.util.Date">
+            <column name="date_time" />
+        </property>
+        <property name="hum" type="double">
+            <column name="hum" />
+        </property>
+    </class>
+</hibernate-mapping>

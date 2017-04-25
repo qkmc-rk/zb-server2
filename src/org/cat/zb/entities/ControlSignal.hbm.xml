@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-1 22:50:41 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.cat.zb.entities.ControlSignal" table="control_signal">
+        <id name="control_id" type="int">
+            <column name="control_id" />
+            <generator class="native" />
+        </id>
+        <property name="fan_open" type="boolean">
+            <column name="fan_open" />
+        </property>
+        <property name="humer_open" type="boolean">
+            <column name="humer_open" />
+        </property>
+        <property name="bomb_open" type="boolean">
+            <column name="bomb_open" />
+        </property>
+        <property name="CO2er_open" type="boolean">
+            <column name="CO2er_open" />
+        </property>
+        <property name="fert_open" type="boolean">
+            <column name="fert_open" />
+        </property>
+    </class>
+</hibernate-mapping>

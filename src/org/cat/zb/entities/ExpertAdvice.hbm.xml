@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2017-4-1 22:50:41 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="org.cat.zb.entities.ExpertAdvice" table="expert_advice">
+        <id name="advice_id" type="int">
+            <column name="advice_id" />
+            <generator class="native" />
+        </id>
+        <property name="temp_max" type="double">
+            <column name="temp_max" />
+        </property>
+        <property name="temp_min" type="double">
+            <column name="temp_min" />
+        </property>
+        <property name="hum_max" type="double">
+            <column name="hum_max" />
+        </property>
+        <property name="hum_min" type="double">
+            <column name="hum_min" />
+        </property>
+        <property name="co2_max" type="double">
+            <column name="co2_max" />
+        </property>
+        <property name="co2_min" type="double">
+            <column name="co2_min" />
+        </property>
+        <property name="light_max" type="double">
+            <column name="light_max" />
+        </property>
+        <property name="light_min" type="double">
+            <column name="light_min" />
+        </property>
+        <property name="fert_max" type="double">
+            <column name="fert_max" />
+        </property>
+        <property name="fert_min" type="double">
+            <column name="fert_min" />
+        </property>
+    </class>
+</hibernate-mapping>

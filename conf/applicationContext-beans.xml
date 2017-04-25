@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!--<import resource="applicationContext.xml"/>  -->
+	
+	<!-- for user deal -->
+	<bean id="userDao" class="org.cat.zb.dao.impl.UserDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="userService" class="org.cat.zb.service.impl.UserServiceImlp">
+		<property name="userDao" ref="userDao"></property>
+	</bean>
+	
+	<!--for msg deal  -->
+	<bean id="msgDao" class="org.cat.zb.dao.impl.MsgDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="msgService" class="org.cat.zb.service.impl.MsgServiceImpl">
+		<property name="msgDao" ref="msgDao"></property>
+	</bean>
+	
+	<!--for msg deal  -->
+	<bean id="tempDao" class="org.cat.zb.dao.impl.TempDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<bean id="tempService" class="org.cat.zb.service.impl.TempServiceImpl">
+		<property name="tempDao" ref="tempDao"></property>
+	</bean>
+</beans>
